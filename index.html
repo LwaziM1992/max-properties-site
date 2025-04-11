@@ -5,83 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Max Properties Growth</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .property-carousel {
-      display: flex;
-      overflow: hidden;
-      position: relative;
-    }
-    .property-carousel img {
-      min-width: 100%;
-      transition: transform 1s ease-in-out;
-    }
-    @keyframes slide {
-      0% { transform: translateX(0%); }
-      33% { transform: translateX(-100%); }
-      66% { transform: translateX(-200%); }
-      100% { transform: translateX(0%); }
-    }
-    .slide-show {
-      animation: slide 15s infinite;
-    }
-  </style>
 </head>
-<body class="bg-white text-gray-800 scroll-smooth">
+<body class="bg-white text-gray-800 font-sans">
   <!-- Navbar -->
-  <header class="bg-blue-800 text-white sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-      <h1 class="text-xl font-bold">Max Properties Growth</h1>
-      <nav class="space-x-4">
-        <a href="#home" class="hover:underline">Home</a>
-        <a href="#about" class="hover:underline">About</a>
-        <a href="#services" class="hover:underline">Financial Services</a>
-        <a href="#education" class="hover:underline">Education</a>
-        <a href="#contact" class="hover:underline">Contact</a>
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl font-bold text-blue-800">Max Properties Growth</h1>
+      <nav class="space-x-6 text-sm font-medium text-gray-700">
+        <a href="index.html" class="hover:text-blue-700 transition">Home</a>
+        <a href="about.html" class="hover:text-blue-700 transition">About</a>
+        <a href="services.html" class="hover:text-blue-700 transition">Financial Services</a>
+        <a href="education.html" class="hover:text-blue-700 transition">Education</a>
+        <a href="contact.html" class="hover:text-blue-700 transition">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Home -->
-  <section id="home" class="bg-blue-900 text-white py-20 text-center">
-    <div class="property-carousel slide-show">
-      <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=80" alt="New York Property" />
-      <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1600&q=80" alt="London Apartment" />
-      <img src="https://images.unsplash.com/photo-1600585152933-96b0d7b3483d?auto=format&fit=crop&w=1600&q=80" alt="Tokyo Real Estate" />
+  <!-- Hero -->
+  <section class="bg-blue-900 text-white text-center py-24 px-4">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-5xl font-bold leading-tight mb-6">Empowering Financial Growth Through Smart Property Investment</h2>
+      <p class="text-lg mb-8">Strategic insights. Trusted expertise. We help investors build wealth that lasts.</p>
+      <a href="contact.html" class="inline-block bg-white text-blue-900 font-semibold px-8 py-3 rounded shadow hover:bg-gray-200 transition">Book a Consultation</a>
     </div>
-    <h2 class="text-4xl font-bold mt-10 mb-4">Strategic Property. Ambitious Goals. Grow with Max.</h2>
-    <p class="text-lg mb-6">Helping investors build lasting wealth through smart financial strategies.</p>
-    <a href="#contact" class="bg-white text-blue-800 px-6 py-2 rounded shadow font-semibold">Book a Consultation</a>
   </section>
 
   <!-- Highlights Section -->
-  <section class="py-16 px-6 bg-white">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
-      <div class="bg-white p-4 border rounded shadow">
-        <img src="https://images.unsplash.com/photo-1573164574396-9d4b6d20f234?auto=format&fit=crop&w=600&q=80" alt="About Us" class="w-full h-40 object-cover mb-4 rounded">
-        <h3 class="text-xl font-semibold mb-2">About Us</h3>
-        <p class="text-sm text-gray-700">Learn who we are, our journey, and what drives our mission to build wealth through property.</p>
-      </div>
-      <div class="bg-white p-4 border rounded shadow">
-        <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437d2?auto=format&fit=crop&w=600&q=80" alt="Financial Services" class="w-full h-40 object-cover mb-4 rounded">
-        <h3 class="text-xl font-semibold mb-2">Financial Services</h3>
-        <p class="text-sm text-gray-700">Explore our advisory, structuring, and financial reporting solutions for property investors.</p>
-      </div>
-      <div class="bg-white p-4 border rounded shadow">
-        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=600&q=80" alt="Education and Coaching" class="w-full h-40 object-cover mb-4 rounded">
-        <h3 class="text-xl font-semibold mb-2">Education & Coaching</h3>
-        <p class="text-sm text-gray-700">Access resources, coaching and guidance for smarter investment decisions.</p>
-      </div>
-      <div class="bg-white p-4 border rounded shadow">
-        <img src="https://images.unsplash.com/photo-1525186402429-b4ff38bedec6?auto=format&fit=crop&w=600&q=80" alt="Contact" class="w-full h-40 object-cover mb-4 rounded">
-        <h3 class="text-xl font-semibold mb-2">Get in Touch</h3>
-        <p class="text-sm text-gray-700">Contact us for consultations, custom services or collaboration opportunities.</p>
-      </div>
+  <section class="py-20 bg-gray-50 px-4">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      <a href="about.html" class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition transform hover:-translate-y-1">
+        <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee7a?auto=format&fit=crop&w=600&q=80" alt="About Us" class="w-full h-44 object-cover">
+        <div class="p-5 text-center">
+          <h3 class="text-xl font-bold mb-2 text-blue-800">About Us</h3>
+          <p class="text-sm text-gray-600">Discover who we are and the mission that drives us to help investors succeed.</p>
+        </div>
+      </a>
+      <a href="services.html" class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition transform hover:-translate-y-1">
+        <img src="https://images.unsplash.com/photo-1581091012184-7e0cdfbb679e?auto=format&fit=crop&w=600&q=80" alt="Financial Services" class="w-full h-44 object-cover">
+        <div class="p-5 text-center">
+          <h3 class="text-xl font-bold mb-2 text-blue-800">Financial Services</h3>
+          <p class="text-sm text-gray-600">Advisory, structuring, and financial reporting solutions tailored for investors.</p>
+        </div>
+      </a>
+      <a href="education.html" class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition transform hover:-translate-y-1">
+        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80" alt="Education & Coaching" class="w-full h-44 object-cover">
+        <div class="p-5 text-center">
+          <h3 class="text-xl font-bold mb-2 text-blue-800">Education & Coaching</h3>
+          <p class="text-sm text-gray-600">Learn how to grow your portfolio with confidence through expert guidance.</p>
+        </div>
+      </a>
+      <a href="contact.html" class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition transform hover:-translate-y-1">
+        <img src="https://images.unsplash.com/photo-1629904853893-c2f5f7b00d62?auto=format&fit=crop&w=600&q=80" alt="Contact Us" class="w-full h-44 object-cover">
+        <div class="p-5 text-center">
+          <h3 class="text-xl font-bold mb-2 text-blue-800">Get in Touch</h3>
+          <p class="text-sm text-gray-600">We're here to help. Reach out to begin your growth journey with us.</p>
+        </div>
+      </a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-blue-800 text-white text-center py-4">
-    <p>&copy; 2025 Max Properties Growth. All rights reserved.</p>
+  <footer class="bg-blue-800 text-white text-center py-6 mt-12">
+    <p class="text-sm">&copy; 2025 Max Properties Growth. All rights reserved.</p>
   </footer>
 </body>
 </html>
