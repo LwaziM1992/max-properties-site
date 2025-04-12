@@ -5,17 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Max Properties Growth</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .floating {
-      animation: float 3s ease-in-out infinite;
-    }
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-  </style>
 </head>
 <body class="bg-white text-gray-900 font-sans">
+  <!-- Navbar -->
   <header class="bg-white shadow sticky top-0 z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
       <h1 class="text-2xl font-bold text-blue-800">Max Properties Growth</h1>
@@ -29,12 +21,17 @@
     </div>
   </header>
 
-  <!-- Hero Section with Background -->
-  <section class="relative bg-cover bg-center bg-no-repeat h-[600px] flex items-center justify-center text-white text-center" style="background-image: url('IMG-20250412-WA0000.jpg');">
-    <div class="bg-black bg-opacity-60 p-8 rounded-xl">
-      <h2 class="text-4xl font-bold mb-4">Empowering Financial Growth Through Smart Property Investment</h2>
-      <p class="text-lg mb-6">We help property investors in South Africa grow wealth through structured financial solutions and expert advisory.</p>
-      <a href="contact.html" class="inline-block bg-white text-blue-900 px-6 py-3 rounded font-semibold hover:bg-blue-100 transition">Book a Consultation</a>
+  <!-- Hero Section with Motto and Durban Image -->
+  <section class="bg-gradient-to-br from-blue-900 to-blue-700 py-16 px-4">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 items-center">
+      <div class="md:col-span-1 text-white text-center md:text-left">
+        <h2 class="text-3xl md:text-4xl font-bold leading-tight mb-6">Empowering Financial Growth<br>Through Smart Property Investment</h2>
+        <p class="mb-4 text-lg">Focused on delivering 25%+ ROI through long-term, cashflow-positive property investments.</p>
+        <a href="contact.html" class="inline-block bg-white text-blue-900 font-semibold px-6 py-3 rounded shadow hover:bg-gray-200 transition">Book a Consultation</a>
+      </div>
+      <div class="md:col-span-3 flex justify-center">
+        <img src="IMG-20250412-WA0000.jpg" alt="Durban City" class="rounded-xl shadow-lg w-full max-h-[500px] object-cover">
+      </div>
     </div>
   </section>
 
